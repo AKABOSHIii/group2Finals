@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    width: 100%;
+}
+
+/* ===== NAVIGATION BAR STYLING ===== */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: rgb(148, 142, 142) solid 1px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+}
+
+.logo--container {
+    margin-left: 14px;
+}
+
+.navItems--container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-right: 30px;
+    align-items:stretch;
+}
+
+#homeBtn, #menuBtn, #aboutBtn, #locationBtn, #contactsBtn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 19px;
+    color: rgb(69, 161, 69);
+    background-color: #fff;
+    border: solid 1px #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#homeBtn:hover, #menuBtn:hover, #aboutBtn:hover, #locationBtn:hover, #contactsBtn:hover {
+    color: #fff;
+    background-color: rgb(69, 161, 69);
+    border: solid 1px rgb(69, 161, 69);
+}
+
+.developer--info {
+    margin-right: 40px;
+}
+
+#devBtn {
+    width: 55px;
+    background-color: rgb(69, 161, 69);
+    border: solid 1px rgb(69, 161, 69);
+    padding: 10px;
+    border-radius: 13px;
+}
+
+#devBtn:hover {
+    box-shadow: 0px 0px 12px rgb(78, 216, 78);
+}
+
+/*===== SECTION 1 STYLING [FRONT/MAIN PAGE] =====*/
+
+.section1 {
+    display:flex;
+    column-gap: 40px;
+    margin-top: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@font-face {
+    font-family: gagalinFont;
+    src:url(Gagalin-Regular.otf)
+}
+.leftSection h1 {
+    color:rgb(69, 161, 69);
+    font-size: 65px;
+    font-family: gagalinFont;
+    letter-spacing: 2px;
+}
+
+.leftSection div h3 {
+    color: #000;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftSection div {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+#tasteText {
+    color: #fff;
+    text-shadow: 0px 0px 12px rgb(52, 196, 52);
+    font-size: 65px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftSection p {
+    width: 530px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ls-buttons {
+    display: flex;
+    column-gap: 5px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+#aboutUsBtn {
+    color: rgb(69, 161, 69);
+    background-color: #fff;
+    border: 1px solid rgb(69, 161, 69);
+    padding: 10px 10px;
+    border-radius: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    width: 120px;
+    transition: 0.3s;
+}
+
+#aboutUsBtn:hover {
+    color: #fff;
+    background-color: rgb(69, 161, 69);
+}
+
+#orderNowBtn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(69, 161, 69);
+    border: 1px solid rgb(69, 161, 69);
+    padding: 10px 10px;
+    border-radius: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    width: 120px;
+}
+
+#orderNowBtn:hover{
+    background-color: rgb(1, 90, 1);
+}
+
+#foodimg1 {
+    width: 550px;
+    border-radius: 17px;
+}
+
+/* ====== SECTION 2 STYLING [BEST SELLERS] ====== */
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.section2 h1 {
+    font-family: gagalinFont;
+    color: #000;
+    font-size: 60px;
+}
+
+#orderNowBtn2 {
+    color: rgb(52, 196, 52);
+    background-color: #fff;
+    border: 1px solid rgb(69, 161, 69);
+    margin-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px 10px;
+    font-weight: 900;
+    box-shadow: 2px 2px rgb(0, 90, 0);
+    transition: 0.3s;
+}
+
+#orderNowBtn2 {
+    box-shadow: 2px 2px 12px rgb(70, 190, 70);
+}
+/* ===== EXAMPLES --> WILL CHANGE LATER ON ====== */
+#exImg1, #exImg2, #exImg3 {
+    width: 150px;
+    position: absolute;
+    z-index: 2;
+}
+
+#exImg1 {
+    margin-top: -130px;
+}
+
+#exImg2 {
+    margin-top: -130px;
+}
+
+#exImg3 {
+    margin-top: -130px;
+}
+
+.bs--container {
+    width: 69%;
+    display: flex;
+    column-gap: 0px;
+    align-items: center;
+    background-color: rgb(69, 161, 69);
+    position:relative;
+    z-index: 1;
+    justify-content: space-between;
+    border-radius:7px;
+    margin-top: 74px;
+    padding: 20px 45px;
+}
+
+.bs1, .bs2, .bs3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px
+}
+
+.bs1 div, .bs2 div, .bs3 div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bs1 p, .bs2 p, .bs3 p{
+    width: 175px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.bs1 h2, .bs2 h2, .bs3 h2 {
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== SECTION 3 STYLING [CUSTOMER'S  REVIEW] ======= */
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.section3 h1 {
+    font-family: gagalinFont;
+    font-size: 60px;
+    color: rgb(69, 161, 69);
+}
+
+.review--container {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    width:80%;
+    margin-top: 36px;
+}
+.customer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: solid 3px rgb(69, 161, 69);
+    background-color: #fff;
+    padding: 25px 10px 25px 27px;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+#fivestar {
+    width: 60px;
+}
+
+#customerImg {
+    width:45px;
+}
+
+/* ======== SECTION 4 STYLING [FOOTER] ========== */
+
+.section4 {
+    margin-top: 55px;
+}
+
+.footer {
+    background-color: rgb(18, 170, 94);
+    display: flex;
+    column-gap: 49px;
+    align-items: flex-start;
+    padding:40px 50px 40px 50px;
+    justify-content: center;
+}
+
+.ftd {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 8px;
+}
+
+.footer div h3 {
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-div, .service-div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.social-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.social-div img {
+    width: 21px;
+}
+
+.link-div a, .service-div h4 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.f-logo {
+    width: 110px;
+}
+
+
